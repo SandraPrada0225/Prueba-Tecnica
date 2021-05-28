@@ -33,7 +33,6 @@ for i in range(len(df)-1):
     #obtenemos el nombre del idioma y lo encriptamos en SHA1
     nycphil = json_normalize(citus_api_data[0], record_path = ['languages'])
     m = hashlib.sha1(str(nycphil["name"].head(1).iloc[0]).encode('utf-8'))
-    #m = hashlib.sha1(str(citus_api_data[0]["languages"][0]["name"]).encode('utf-8'))
     #generamos el tiempo en el que se tardo en generar la fila usando la libreria time
     tiempo=time()-start_time
     #añadimos las filas a la tabla creada en pandas 
