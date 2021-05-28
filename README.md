@@ -2,7 +2,7 @@
 
 ### Prueba tecnica ZINOBE
 
-##Desarrollo
+## Desarrollo
 
 **1. De https://rapidapi.com/apilayernet/api/rest-countries-v1, obtenga todas las regiones existentes:**
 - Registro en  rapidapi.com para tener acceso a los datos.
@@ -25,12 +25,12 @@
 - Tomamos el nombre del pais de los datos obtenidos.
 
 **3. De https://restcountries.eu/ obtenga el nombre del idioma que habla el pais y encriptelo con SHA1:**
--De los datos del pais y dentro del mismo for extraemos la columna ´languages´.
--Realizamos una normalizacion a la columna 'languajes' por ser un JSON anidado y tomamos el nombre del idioma.
--Llevamos a cabo la encriptación SHA1 haciendo uso de la libreria hashlib.
+- De los datos del pais y dentro del mismo for extraemos la columna ´languages´.
+- Realizamos una normalizacion a la columna 'languajes' por ser un JSON anidado y tomamos el nombre del idioma.
+- Llevamos a cabo la encriptación SHA1 haciendo uso de la libreria hashlib.
 
 **4. En la columna Time ponga el tiempo que tardo en armar la fila (debe ser automatico):**
--Con ayuda de la libreria time generamos el tiempo actual al inicio del ciclo for( en el ciclo for se arman las filas) almacenamos el tiempo en una variable como 'tiempo_actual', al finalizar el ciclo for generamos nuevamente el tiempo y lo restamos con la variable 'tiempo_actual', generando asi el tiempo en que tarda en armar una fila.
+- Con ayuda de la libreria time generamos el tiempo actual al inicio del ciclo for( en el ciclo for se arman las filas) almacenamos el tiempo en una variable como 'tiempo_actual', al finalizar el ciclo for generamos nuevamente el tiempo y lo restamos con la variable 'tiempo_actual', generando asi el tiempo en que tarda en armar una fila.
 
 **5. La tabla debe ser creada en un DataFrame con la libreria PANDAS:**
 - Se guardan las filas realizadas dentro de un DataFrame llamado ´tabla´ haciendo uso de la libreria Pandas:
@@ -48,10 +48,10 @@
 
 **6. Con funciones de la libreria pandas muestre el tiempo total, el tiempo promedio, el tiempo minimo y el maximo que tardo en procesar toda las filas de la tabla:**
 
- -Con mean() generamos el tiempo promedio.
- -Con sum() el tiempo total.
- -Con min() el tiempo minimo.
- -Con max() el tiempo maximo.
+ - Con mean() generamos el tiempo promedio.
+ - Con sum() el tiempo total.
+ - Con min() el tiempo minimo.
+ - Con max() el tiempo maximo.
 
 **7. Guarde el resultado en sqlite:**
 
@@ -59,4 +59,4 @@
 - Generamos una nueva tabla llamada ´datos´ y guardamos los datos.
 
 **8. Genere un Json de la tabla creada y guardelo como data.json:**
--Creamos el archivo data.json con ayuda de la libreria Pandas to_json
+- Creamos el archivo data.json con ayuda de la libreria Pandas to_json
